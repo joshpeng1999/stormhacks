@@ -15,7 +15,7 @@ const ErrorScreen = props => {
           StormHacks 2022 will be live from February, 18th to 20th, 2022. In the
           meantime, we’ll be updating this page for you.
         </p>
-        <Link to="/stormhacks2021" className={styles.smallText}>
+        <Link to="/2021" className={styles.smallText}>
           To restore to a previous version, click here.
         </Link>
 

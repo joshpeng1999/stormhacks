@@ -14,15 +14,13 @@
     "react-typist": "^2.0.5",
     "web-vitals": "^0.2.4"
   },
-    "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://joshpeng1999.github.io/stormhacks",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -40,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

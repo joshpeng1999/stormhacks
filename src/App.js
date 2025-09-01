@@ -15,12 +15,9 @@ const App = () => {
 
   return (
     <div id={styles.app}>
-      <Router>
+      <Router basename="/stormhacks">
         <Switch>
-          <Route exact path="/">
-            <ErrorScreen />
-          </Route>
-          <Route path="/stormhacks2021">
+          <Route path="/">
             <HomeToggle />
           </Route>
         </Switch>
